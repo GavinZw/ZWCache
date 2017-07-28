@@ -23,6 +23,17 @@ static NSString *const cachePathBase = @"com.imysky.ZWCache";
 
 @implementation ZWCache
 
+#pragma mark - Initialization -
+
+- (instancetype)init
+{
+  @throw [NSException exceptionWithName:@"Please don't initialize such."
+                                 reason:@"Please don't initialize such."
+                               userInfo:nil];
+  return [ZWCache new];
+}
+
+
 + (YYCache *)cache{
   if (!_YYCache) {
     _YYCache = [[YYCache alloc] initWithName:[ZWCache _cachePathName:@"default_db"]];

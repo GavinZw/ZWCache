@@ -125,5 +125,12 @@ __attribute__((objc_subclassing_restricted))
 
 @end
 
+@interface ZWCache (Unavailable)
+
+- (instancetype)init NS_UNAVAILABLE;
++ (instancetype)new NS_UNAVAILABLE;
+
+@end
+
 NS_ASSUME_NONNULL_END
 
